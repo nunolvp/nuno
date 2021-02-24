@@ -1,0 +1,114 @@
+<html>
+   <head>
+        <title> Contactos </title>
+	<link href="Contactos.css" type="text/css" rel="stylesheet">
+	<meta charset="UTF-8">
+   </head>
+   
+   <body>
+	<h1> Nuno - Formação: Contacte-nos!</h1>
+
+	<form>
+		<fieldset><legend>Identificação do utilizador</legend>
+			<p>Nome: <input type="text" name="nnome" id="inome" size="80" maxlenght="90" placeholder="Nome Completo"></p>
+			<p>Password: <input type="password" name="npassword" id="ipassword" size="10" maxlenght="10" placeholder="max 10 dígitos"></p>
+			<p>Email: <input type="email" name="nmail" id="iemail" size="60" maxlenght="100" placeholder="Email"></p>
+			
+			<p><fieldset><legend id="genero">Género:</legend></p>
+			<p><input type="radio" name="ngenero" id="iMasc"> <label for="iMasc">Masculino</label></p>
+			<p><input type="radio" name="ngenero" id="iFem">Feminino</p>
+		</fieldset>
+			<p>Data de Nascimento: <input type="date" name="tnasc" id="cnasc"</p>
+			
+</fieldset>
+
+		<fieldset><legend>Morada do Utilizador</legend>
+			<p>Rua: <input type="text" name="trua" id="crua" size="60" maxlenght="80" placeholder="Nome da Rua"></p>
+			<p>Número: <input type="number" name="tcp" id="ccp" min="0" max="99999" placeholder="Número de Telemóvel"></p>
+			<p>Código Postal: <input type="number" name="tcp" id="ccp" min="0" max="99999"> - <input type="number" name="tcp" id="ccp" min="0" max="99999"></p>
+			<p>Localidade: <input type="text" name="tlocal" id="clocal" size="60" maxlenght="80" placeholder="Localidade" list="localidades"></p>
+		<datalist id="localidades">
+			<option value="Matosinhos"></option>
+			<option value="Maia"></option>
+			<option value="Santo Tirso"></option>
+			<option value="Trofa"></option>
+		</datalist>
+		<legend>Nacionalidade</legend>
+<p><input type="text" name="pais" id="pais" placeholder="País de nascimento"></p>
+<input type="button" value="Verificar" onclick="nacional()">
+<div id="nasc"></div>
+</fieldset>
+</fieldset>
+</form>
+
+</fieldset>
+<script>
+function nacional(){
+var p = window.document.getElementById('pais').value
+var n = window.document.getElementById('nasc')
+switch(p){
+
+case 'Portugal':
+n.innerText = `Meu amigo Português, agradecemos o contacto`
+break
+case 'Espanha':
+n.innerText = `Meu amigo Espanhol, agradecemos o contacto`
+break
+case 'França':
+n.innerText = `Meu amigo Francês, agradecemos o contacto`
+break
+case 'Brasil':
+n.innerText = `Meu amigo Brasileiro, agradecemos o contacto`
+break
+default:
+n.innerText = `Meu amigo Estrangeiro, agradecemos o contacto`
+break 
+}
+
+}
+</script>
+
+</fieldset>
+		<fieldset><legend>Opinião de Naruto</legend>
+			<p>Gosta de Naruto: <input type="checkbox" name="ndisp" id="idisp"></p>
+			<p>Qual o teu Personagem Favorito: <input type="text" name="nloc" id="iloc" size="40" maxlength="80" placeholder="Escolha um Personagem" list="ufcd"></p>
+		<datalist id="ufcd">
+			<option value="Naruto"></option>
+			<option value="Sasuke"></option>
+			<option value="Jiraya"></option>
+			<option value="Orochimaru"></option>
+			<option value="Pain"></option>
+			<option value="Madara"></option>
+			<option value="Itachi"></option>
+			<option value="Sakura"></option>
+			<option value="Minato"></option>
+			<option value="Kakashi"></option>
+			<option value="Gai"></option>
+			<option value="Iruka"></option>
+</datalist>
+			<p>Qual Personagem é mais Forte: <input type="text" name="nloc" id="iloc" size="40" maxlength="80" placeholder="Escolha um Personagem" list="ufcd"></p>
+		<datalist id="ufcd">
+			<option value="Naruto"></option>
+			<option value="Sasuke"></option>
+			<option value="Jiraya"></option>
+			<option value="Orochimaru"></option>
+			<option value="Pain"></option>
+			<option value="Madara"></option>
+		</datalist>
+
+			
+</fieldset>
+			<fieldset><legend>Observações:</legend>
+<br>
+			<b>Mensagem: <textarea name="nmens" id="imens" cols="45" rows="5" placeholder="Escreva aqui a sua mensagem."></textarea></p></b>
+</fieldset>
+
+		<input type="submit" value="Enviar">
+
+</form> 
+		<br>
+		
+		<center><a href="Naruto.html">Home</a></center>	 
+ </body>
+
+</html>

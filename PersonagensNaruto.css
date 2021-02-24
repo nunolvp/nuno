@@ -1,0 +1,28 @@
+body{
+	text-align: center;
+	background-image:url(Imagens/fund.jpg);
+}
+
+h1{
+	text-align: center;
+	color:yellow;
+	font-size:100px;
+}
+
+h2{
+	text-align: center;
+	color:red;
+	font-size:70px;
+}
+
+th{
+	font-size:25px;
+	color: yellow;
+}
+
+td{
+font-family: "Times New Roman", Times, serif;
+color: black;	
+text-align: center;
+border: 5px solid ;	
+}

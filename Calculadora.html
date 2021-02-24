@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<Html long "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-aquiv="x-UA-compatible" content="IE=edge">
+    <meta name="Viewport" content="width=deveice-width, initial-scale=1.0">
+    <title>Calculadora de Horas</title>
+
+</head>
+
+<body>
+    <h1> Veja o número de Minutos que já assitiu Naruto </h1>
+    <input type="number" name="n1" id="n1"placeholder="Numero de Episódios (720 ep)">
+    x
+    <input type="number" name="n2" id="n2"placeholder="Cada ep tem 20  min">
+    <input type="button" name="multiplicar" id="multiplicar"value="Multiplicar"onclick="multiplicar()">
+
+    <div id="res">Resultado</div>
+    <script>
+            function multiplicar(){
+                var num1 = Number(window.document.getElementById('n1').value)
+                var num2 = Number(window.document.getElementById('n2').value)
+                var s = window.document.getElementById('res')
+
+                var res = num1 * num2
+                 s.innerText = `${num1} * ${num2} número de minutos assistidos: ${res}`
+
+            }
+
+    </script>
+    <br>
+    <a href="Naruto.html">Home</a>	
+    </center>
+
+</body>
+</Html> 

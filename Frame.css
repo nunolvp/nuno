@@ -1,0 +1,68 @@
+body{
+
+    background-image: url(Imagens/wpnaruto.jpg);
+
+
+}
+h1{
+    font-family: bolt;
+    color: Green;
+    font-size: 60px;
+    Margin-right: 1200px;
+
+}
+#segundop{
+    font-weight: Comic Sans MS;
+    color: White;
+    font-size: 40px;
+    background-color: Red;
+    Margin-left:25%;
+    Margin-right:25%;
+
+}
+#menu{
+    display: block;
+    margin: auto;
+
+}
+
+#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: absolute;
+    top: 25px;
+    left: 850px;
+
+}
+#menu li{
+    display: inline;
+    background-color: Pink;
+    padding: 12px;
+    margin: 4px;
+
+}
+#menu li hover{
+    background-color: Red;
+    text-decoration: underline;
+
+}
+h3{
+    font-family: Comic Sans MS;
+    color: Black;
+    font-size: 26px;
+}
+h2{
+    font-family: Comic Sans MS;
+    font-size: 50px;
+    color: Red;
+}
+h4{
+
+    font-size: 20px;
+}
+h5{
+    font-family: Comic Sans MS;
+    font-size: 70px;
+    color: Gold;
+}
